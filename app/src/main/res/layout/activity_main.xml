@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/et_a"
+        android:layout_margin="20dp"
+        android:autofillHints="Enter a number"
+        android:hint="@string/enter_a_number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:background="#FFFFFF"
+        android:inputType="number"
+        android:maxWidth="440dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/et_b"
+        android:layout_margin="20dp"
+        android:autofillHints="Enter a second number"
+        android:hint="@string/enter_a_second_number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:background="#FFFFFF"
+        android:inputType="number"
+        android:maxWidth="440dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="300dp"
+            android:id="@+id/btn_add"
+            android:layout_margin="4dp"
+            android:text="@string/add"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_subtract"
+            android:layout_margin="4dp"
+            android:text="@string/minus"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_multiply"
+            android:layout_margin="4dp"
+            android:text="@string/multiply"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_divide"
+            android:layout_margin="4dp"
+            android:text="@string/divide"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textSize="24sp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/result"
+        android:textColor="#000000"/>
+
+</LinearLayout>
