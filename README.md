@@ -27,7 +27,7 @@ What things you need to install the software and how to install them:
 
 A step by step series of examples that tell you how to get a development environment running:
 
-1. Clone the repository: `git clone https://github.com/yourusername/your-repo-name.git`
+1. Clone the repository
 2. Open the project with Android Studio.
 3. Sync the Gradle files and build the project.
 
